@@ -1,6 +1,8 @@
 # EZ-NMA
 Normal Mode Analysis with Elastic Network Model
 
-A demo of spastin is provided (nma-demo.gif)
-
 This is the CPU version. Parallel version with new OpenMP features and GPU version are under testing and debugging...
+
+A short demo of spastin is provided:
+<img src="https://github.com/wangqi1990uc/ez-nma/blob/master/nma-demo.gif" width="80%" height="80%" />
+
