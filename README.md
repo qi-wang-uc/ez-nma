@@ -24,7 +24,7 @@ The general solution of this differential equations has the following form:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{u}_k(t)=\mathbf{a}_ke^{-i\omega_kt}\quad(5)" target="_blank"><img src="https://latex.codecogs.com/png.latex?\mathbf{u}_k(t)=\mathbf{a}_ke^{-i\omega_kt}\quad(5)" title="\mathbf{u}_k(t)=\mathbf{a}_ke^{-i\omega_kt}\quad(5)" /></a>
 
-Plug this solution back to the equation, we have an eigenvalue problem. By matrix diagonalization, we can obtain the eigenvalue and eigenvectors (normal modes) of the sysmte:
+Plug this solution back to the equation, we have an eigenvalue problem. By matrix diagonalization, we can obtain the eigenvalue and eigenvectors (normal modes) of the system:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted}&space;\mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda}&space;\Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" target="_blank"><img src="https://latex.codecogs.com/png.latex?\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted}&space;\mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda}&space;\Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" title="\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted} \mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda} \Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" /></a>
 
