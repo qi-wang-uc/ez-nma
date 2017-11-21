@@ -9,6 +9,8 @@ In elastic network model, the potential is expressed as:
 
 Moreover, the potential energy can be expanded as:
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" target="_blank"><img src="https://latex.codecogs.com/png.latex?E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" title="E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" /></a>
+
 <img src="http://www.sciweavers.org/tex2img.php?eq=V%28%5Cmathbf%7Br%7D%29%3DV%28%5Cmathbf%7Br%7D%5E0%29%2B%5Csum_i%20%5Cbig%28%20%5Cfrac%7B%5Cpartial%20V%7D%7B%5Cpartial%20r_i%7D%20%5Cbig%29%5E0%28r_i-r_i%5E0%29%20%2B%5Cfrac%7B1%7D%7B2%7D%5Csum_i%5Csum_j%20%5Cbig%28%20%5Cfrac%7B%5Cpartial%5E2%20V%7D%7B%5Cpartial%20r_i%5Cpartial%20r_j%7D%20%5Cbig%29%5E0%28r_i-r_i%5E0%29%28r_j-r_j%5E0%29%2B%5Cdots%5Cquad%282%29&bc=White&fc=Black&im=png&fs=12&ff=mathpazo&edit=0" align="center" border="0" alt="V(\mathbf{r})=V(\mathbf{r}^0)+\sum_i \big( \frac{\partial V}{\partial r_i} \big)^0(r_i-r_i^0) +\frac{1}{2}\sum_i\sum_j \big( \frac{\partial^2 V}{\partial r_i\partial r_j} \big)^0(r_i-r_i^0)(r_j-r_j^0)+\dots\quad(2)" width="593" height="50" />
 
 Here the system is assumed to be near equilibrium, thus the first order derivative is zero. The ground state energy can also be assigned as zero, thus only the second order derivative is left:
