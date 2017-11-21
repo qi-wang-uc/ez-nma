@@ -5,7 +5,7 @@ Normal Mode Analysis with Elastic Network Model
 ### Principles of Normal Mode Analysis
 In elastic network model, the potential is expressed as:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=E%3D%5Cfrac%7B1%7D%7B2%7D%5Csum_%7Bd_%7Bij%7D%3CR_c%7DK%28d_%7Bij%7D-d_%7Bij%7D%5E0%29%5E2%5Cquad%281%29&bc=White&fc=Black&im=png&fs=12&ff=mathpazo&edit=0" align="center" border="0" alt="E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" width="219" height="49" ></R_c>
+<img src="http://www.sciweavers.org/tex2img.php?eq=E%3D%5Cfrac%7B1%7D%7B2%7D%5Csum_%7Bd_%7Bij%7D%3CR_c%7DK%28d_%7Bij%7D-d_%7Bij%7D%5E0%29%5E2%5Cquad%281%29&bc=White&fc=Black&im=png&fs=12&ff=mathpazo&edit=0" align="center" border="0" alt="E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" width="219" height="49" >
 
 Moreover, the potential energy can be expanded as:
 
