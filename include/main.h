@@ -5,6 +5,7 @@
 #include <cmath>
 
 using real = double;
+using integer = unsigned int;
 
 struct Coor {
     real x;

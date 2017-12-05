@@ -21,7 +21,7 @@ bool read_config(const std::string& inp_name, Config& config) {
     auto is_space = [](char c) {return std::isspace(c);};
     while(getline(inp_file, each_line)) {
         /* filter out comment lines, empty lines and lines of spaces */
-        if(0==each_line.substr(0,1).compare("#") ||
+        if(0==each_line.substr(0,1).compare("!") ||
             std::all_of(each_line.begin(),each_line.end(),is_space))
             continue;
         each_stream.str(each_line);
