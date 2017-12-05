@@ -2,7 +2,7 @@
       
 #1 [job_name] as name prefix for output files.
 # not mandatory, default is <ez-nma>
-#job_name	spastin-hexamer
+job_name	spastin-hexamer-cpu
 
 #2 [nma_coor] specifies coordinates perform normal mode analysis
 # madatory, need this to build Hessian array.
@@ -11,7 +11,7 @@ nma_coor	pdb/spastin-hexamer-without-mtbd-ordered.pdb
 #3 [r_cutoff] specifies cutoff distance to build spring network.
 # For ENM, r_cutoff is recommended to be set between 13 to 15A (Eyal 2006).
 # not mandatory, default is 10.0
-r_cutoff	14.0
+r_cutoff	12.0
 
 #4 [n_modes] specifies numer of normal modes with lowest 
 # frequencies (energies) needed to write.
