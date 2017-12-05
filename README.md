@@ -30,7 +30,7 @@ Plug this solution back to the equation, we have an eigenvalue problem. By matri
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted}&space;\mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda}&space;\Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" target="_blank"><img src="https://latex.codecogs.com/png.latex?\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted}&space;\mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda}&space;\Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" title="\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted} \mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda} \Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" /></a>
 
 ### Notes
-- This is the CPU version. Parallel version with new OpenMP features and GPU version are under testing and debugging...
+- Both CPU and GPU implementations are preliminary and under testing and debugging. 
 
 - A short demo of spastin is provided:
 
