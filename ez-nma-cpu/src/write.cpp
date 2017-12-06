@@ -11,17 +11,17 @@
 
 void write_data(const std::string& out_name, integer& n_modes, const real& tol) {
     std::cout << "WriteData> Wrting data to " << out_name << std::endl;
-	const auto dim3 = 3*get_natom();
-	if (n_modes > dim3) {
+	const auto LD = 3*get_natom();
+	if (n_modes > LD) {
 		std::cout << "WriteData> Requested output more than maximum eigenvectors." 
 				  << std::endl
 				  << "WriteData> Writing all the eigenvectors ..." << std::endl;
-		n_modes = dim3;
+		n_modes = LD;
 	}
 	/* Sort the eigenvalues */
 	std::vector<std::pair<integer, real> > X; 
-	for(integer i=0; i<dim3; ++i) {
-		real val = get_H_elem(i*dim3+i) > tol ? get_H_elem(i*dim3+i) : 0.0;
+	for(integer i=0; i<LD; ++i) {
+		real val = get_H_elem(i*LD+i) > tol ? get_H_elem(i*LD+i) : 0.0;
 		X.push_back(std::make_pair(i, val));
 	}
 	auto cmp_lt = [](const std::pair<integer, real>& a,
@@ -37,8 +37,8 @@ void write_data(const std::string& out_name, integer& n_modes, const real& tol) 
 				 << std::left << std::setprecision(6) << std::setiosflags(std::ios::fixed) 
 				 << X[i].second << " : ";
 		// Write eigenvectors.
-		for(integer j=0; j<dim3; ++j) {
-			out_file << get_E_elem(dim3*j+X[i].first) << " ";
+		for(integer j=0; j<LD; ++j) {
+			out_file << get_E_elem(LD*j+X[i].first) << " ";
 		}
 		out_file << std::endl;
 	}
