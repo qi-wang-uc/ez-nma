@@ -3,36 +3,34 @@ Normal Mode Analysis with Elastic Network Model
 
 
 ### Principles of Normal Mode Analysis
-_(please refresh the page if equations are not shown properly)_
-
 In elastic network model, the potential is expressed as:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" target="_blank"><img src="https://latex.codecogs.com/png.latex?E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" title="E=\frac{1}{2}\sum_{d_{ij}<R_c}K(d_{ij}-d_{ij}^0)^2\quad(1)" /></a>
+![equation 1](demo/eqn/eqn1.png)
 
 Moreover, the potential energy can be expanded as:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{matrix}&space;V(\mathbf{r})=V(\mathbf{r}^0)&plus;\sum_i&space;\big(&space;\frac{\partial&space;V}{\partial&space;r_i}&space;\big)^0(r_i-r_i^0)&plus;&space;\frac{1}{2}\sum_i\sum_j&space;\big(&space;\frac{\partial^2&space;V}{\partial&space;r_i\partial&space;r_j}&space;\big)^0(r_i-r_i^0)(r_j-r_j^0)&plus;\dots\quad(2)&space;\end{matrix}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\begin{matrix}&space;V(\mathbf{r})=V(\mathbf{r}^0)&plus;\sum_i&space;\big(&space;\frac{\partial&space;V}{\partial&space;r_i}&space;\big)^0(r_i-r_i^0)&plus;&space;\frac{1}{2}\sum_i\sum_j&space;\big(&space;\frac{\partial^2&space;V}{\partial&space;r_i\partial&space;r_j}&space;\big)^0(r_i-r_i^0)(r_j-r_j^0)&plus;\dots\quad(2)&space;\end{matrix}" title="\begin{matrix} V(\mathbf{r})=V(\mathbf{r}^0)+\sum_i \big( \frac{\partial V}{\partial r_i} \big)^0(r_i-r_i^0)+ \frac{1}{2}\sum_i\sum_j \big( \frac{\partial^2 V}{\partial r_i\partial r_j} \big)^0(r_i-r_i^0)(r_j-r_j^0)+\dots\quad(2) \end{matrix}" /></a>
+![equation 2](demo/eqn/eqn2.png)
 
 Here the system is assumed to be near equilibrium, thus the first order derivative is zero. The ground state energy can also be assigned as zero, thus only the second order derivative is left:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=V(\mathbf{q})=\frac{1}{2}\mathbf{\Delta&space;q^TH\Delta&space;q},~~~~\mathrm{where}~H_{ij}=\left(\frac{\partial^2V}{\partial&space;q_i\partial&space;q_j}&space;\right)^0\quad(3)" target="_blank"><img src="https://latex.codecogs.com/png.latex?V(\mathbf{q})=\frac{1}{2}\mathbf{\Delta&space;q^TH\Delta&space;q},~~~~\mathrm{where}~H_{ij}=\left(\frac{\partial^2V}{\partial&space;q_i\partial&space;q_j}&space;\right)^0\quad(3)" title="V(\mathbf{q})=\frac{1}{2}\mathbf{\Delta q^TH\Delta q},~~~~\mathrm{where}~H_{ij}=\left(\frac{\partial^2V}{\partial q_i\partial q_j} \right)^0\quad(3)" /></a>
+![equation 3](demo/eqn/eqn3.png)
 
 According to Newton's Law II, we have:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{M}\frac{\mathrm{d^2}\mathbf{\Delta&space;q}}{\mathrm{d}t^2}&plus;\mathbf{H\Delta&space;q}=0\quad(4)" target="_blank"><img src="https://latex.codecogs.com/png.latex?\mathbf{M}\frac{\mathrm{d^2}\mathbf{\Delta&space;q}}{\mathrm{d}t^2}&plus;\mathbf{H\Delta&space;q}=0\quad(4)" title="\mathbf{M}\frac{\mathrm{d^2}\mathbf{\Delta q}}{\mathrm{d}t^2}+\mathbf{H\Delta q}=0\quad(4)" /></a>
+![equation 4](demo/eqn/eqn4.png)
 
 The general solution of this differential equations has the following form:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{u}_k(t)=\mathbf{a}_ke^{-i\omega_kt}\quad(5)" target="_blank"><img src="https://latex.codecogs.com/png.latex?\mathbf{u}_k(t)=\mathbf{a}_ke^{-i\omega_kt}\quad(5)" title="\mathbf{u}_k(t)=\mathbf{a}_ke^{-i\omega_kt}\quad(5)" /></a>
+![equation 5](demo/eqn/eqn5.png)
 
 Plug this solution back to the equation, we have an eigenvalue problem. By matrix diagonalization, we can obtain the eigenvalue and eigenvectors (normal modes) of the system:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted}&space;\mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda}&space;\Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" target="_blank"><img src="https://latex.codecogs.com/png.latex?\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted}&space;\mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda}&space;\Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" title="\mathbf{Hu}_k=\omega^2_k\mathbf{Mu}_k\xrightarrow{mass-weighted} \mathbf{\tilde{H}\tilde{U}=\tilde{U}\Lambda} \Longleftrightarrow\color{red}\mathbf{\tilde{U}^T\tilde{H}\tilde{U}=\Lambda}\color{black}\quad(6)" /></a>
+![equation 6](demo/eqn/eqn6.png)
 
 ### Notes
 - Both CPU and GPU implementations are preliminary and under testing and debugging. 
 
 - A short demo of spastin is provided:
 
-<img src="https://github.com/wangqi1990uc/ez-nma/blob/master/nma-demo.gif" width="40%" height="40%" />
+![nma demo](demo/eqn/nma-demo.gif)
 
