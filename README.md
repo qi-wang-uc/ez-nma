@@ -32,5 +32,5 @@ Plug this solution back to the equation, we have an eigenvalue problem. By matri
 
 - A short demo of spastin is provided:
 
-![nma demo](demo/eqn/nma-demo.gif)
+![nma demo](demo/nma-demo.gif)
 
