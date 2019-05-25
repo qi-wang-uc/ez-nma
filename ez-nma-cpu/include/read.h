@@ -6,12 +6,12 @@
 #include "main.h"
 
 struct Config {
-	std::string job_name = "ez-nma";
-	std::string nma_coor = "";
+    std::string job_name = "ez-nma";
+    std::string nma_coor = "";
     std::string ref_coor = "";
     std::string vmd_file = "";
     integer n_modes = 10;
-	real r_cutoff = 10.0;
+    real r_cutoff = 10.0;
     real tol = 1e-6;
 };
 
