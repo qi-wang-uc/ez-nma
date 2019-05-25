@@ -22,7 +22,7 @@ bool read_config(const std::string& inp_name, Config& config) {
     while(getline(inp_file, each_line)) {
         /* filter out comment lines, empty lines and lines of spaces */
         if(0==each_line.substr(0,1).compare("#") ||
-		   0==each_line.substr(0,1).compare("!") ||
+           0==each_line.substr(0,1).compare("!") ||
            std::all_of(each_line.begin(),each_line.end(),is_space))
             continue;
         each_stream.str(each_line);
@@ -61,28 +61,28 @@ void print_config(const Config& config) {
 }
 
 bool read_coor(const std::string& pdb_name, std::vector<Coor>& coor) {
-	std::cout << "ReadCoor> Reading coordinates from file [" << pdb_name
-	          << "]" << std::endl;
-	std::ifstream inp_file(pdb_name);
-	if(!inp_file.is_open()) {
+    std::cout << "ReadCoor> Reading coordinates from file [" << pdb_name
+              << "]" << std::endl;
+    std::ifstream inp_file(pdb_name);
+    if(!inp_file.is_open()) {
         std::cout << "ERROR> Coordinate file not found!" << std::endl;
         return false;
     }
-	std::string each_line;
-	integer i_beads = 0;
-	while(std::getline(inp_file, each_line)){
-		if(each_line.substr(0,4)!="ATOM" || each_line.substr(13,2)!="CA"){
-			continue;
-		}
+    std::string each_line;
+    integer i_beads = 0;
+    while(std::getline(inp_file, each_line)){
+        if(each_line.substr(0,4)!="ATOM" || each_line.substr(13,2)!="CA"){
+            continue;
+        }
         coor.push_back(Coor(std::stof(each_line.substr(31,8)),
                             std::stof(each_line.substr(39,8)),
                             std::stof(each_line.substr(47,8))));
-		i_beads++;
-	}
+        i_beads++;
+    }
     inp_file.close();
-	std::cout << "ReadCoor> After reading, (" << i_beads 
-	          << ") CA atoms are recorded." << std::endl;
-	if(i_beads<2) {
+    std::cout << "ReadCoor> After reading, (" << i_beads 
+              << ") CA atoms are recorded." << std::endl;
+    if(i_beads<2) {
         std::cout << "ERROR> Not enough atoms for NMA!" << std::endl;
         return false;
     } 

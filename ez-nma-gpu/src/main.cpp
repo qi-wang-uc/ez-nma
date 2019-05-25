@@ -9,10 +9,10 @@
 
 int main(int argc, char* argv[]) {
     std::ios_base::sync_with_stdio(false);
-	std::cout << "EZNMA> ***********************************************" << std::endl
-	          << "EZNMA> Normal Mode Analysis with Elastic Network Model" << std::endl
-	          << "EZNMA> version 1.0 beta, Feburary 2017." << std::endl
-	          << "EZNMA> ***********************************************" << std::endl 
+    std::cout << "EZNMA> ***********************************************" << std::endl
+              << "EZNMA> Normal Mode Analysis with Elastic Network Model" << std::endl
+              << "EZNMA> version 1.0 beta, Feburary 2017." << std::endl
+              << "EZNMA> ***********************************************" << std::endl 
               << std::endl;
     if(argc!=2) {
         std::cout << "ERROR> Missing input file!" << std::endl;
@@ -31,11 +31,7 @@ int main(int argc, char* argv[]) {
     /* 3. diagonalize array*/
     diag_hessian_gpu(leading_dim.LD_matrix, config.tol);
     
-    /* 4. calculate overlap if requested, currently not implemented.
-        calc_overlap(config.job_name, config.ref_coor);
-    */
-
-    /* 5. write output */
+    /* 4. write output */
     std::string out_name = config.job_name + std::string("_eigen_data_cutoff") + 
                            real2str(config.r_cutoff) + std::string(".dat");
 
