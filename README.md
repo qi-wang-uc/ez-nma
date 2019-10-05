@@ -1,5 +1,5 @@
 # EZ-NMA
-Normal Mode Analysis with Elastic Network Model
+Normal Mode Analysis with Elastic Network Model with GPU Acceleration
 
 
 ## Principles of Normal Mode Analysis
