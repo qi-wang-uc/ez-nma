@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <iomanip>
 #include <utility>
+#include <<numeric>
 #include <omp.h>
 #include "../include/main.h"
 #include "../include/read.h"
