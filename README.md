@@ -3,7 +3,10 @@ Normal Mode Analysis with Elastic Network Model with GPU Acceleration
 
 
 ## Principles of Normal Mode Analysis
-In elastic network model, the potential is expressed as:
+In elastic network model, each amino acid is represented as the CA bead (cyan sphere) connected by a spring (black line). 
+![enm demo](demo/enm-demo.png)
+
+The potential is expressed as:
 
 ![equation 1](demo/eqn/eqn1.png)
 
